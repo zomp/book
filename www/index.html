@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zpěvník chválových písní pro akce Jump a Havelnice">
+    <meta name="author" content="Jan Molnár">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Zpěvník">
+    <meta name="msapplication-tooltip" content="Zpěvník chválových písní pro akce Jump a Havelnice">
+    <meta name="msapplication-starturl" content="./">
+    <meta name="msapplication-navbutton-color" content="#428BCA">
+    <meta name="msapplication-TileColor" content="#428BCA">
+    <meta name="msapplication-TileImage" content="ico/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57x57-precomposed.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Zpěvník</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/book.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <form class="navbar-search" role="search">
+            <div class="input-group">
+              <input type="text" class="form-control form-search" placeholder="Hledat název, číslo, obsah písně...">
+              <ul class="dropdown-menu typeahead-search" role="menu" aria-labelledby="form-search"></ul>
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-search"><span class="glyphicon glyphicon-search"></span></button>
+              </span>
+            </div>
+          </form>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span> Předchozí</a></li>
+            <li><a href="#carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span> Další</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-wrench"></span> Nastavení <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#help" data-toggle="modal"><span class="glyphicon glyphicon-question-sign"></span> Nápověda</a></li>
+                <li class="divider"></li>
+                <li><a href="#" class="sizeUp"><span class="glyphicon glyphicon-zoom-in"></span> Zvětšit písmo</a></li>
+                <li><a href="#" class="sizeReset"><span class="glyphicon glyphicon-search"></span> Původní velikost</a></li>
+                <li><a href="#" class="sizeDown"><span class="glyphicon glyphicon-zoom-out"></span> Zmenšit písmo</a></li>
+                <li class="divider"></li>
+                <li><a href="#" class="invertor"><span class="glyphicon glyphicon-tint"></span> Režim do šera</a></li>
+                <li class="divider"></li>
+                <li><a href="#" class="fullscreen"><span class="glyphicon glyphicon-fullscreen"></span> Celá obrazovka</a></li>
+              </ul>
+            </li>
+            <li><a href="#toc" data-toggle="modal"><span class="glyphicon glyphicon-list"></span> Obsah</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="container">
+      <div id="carousel" class="carousel slide" data-interval="false">
+        <div class="carousel-inner">
+          <div class="item active" id="čšěžč">
+            <div class="jumbotron">
+              <h1>Zpěvník</h1>
+              <h2>Použití</h2>
+              <p>Do textového pole v horní části obrazovky zadejte:</p>
+              <ul>
+                <li>číslo písně (1-177),</li>
+                <li>část názvu písně (s diakritikou i bez),</li>
+                <li>část textu písně (s diakritikou),</li>
+              </ul>
+              <p>nebo prostě použijte <a href="#toc" data-toggle="modal"><span class="glyphicon glyphicon-list"></span> Obsah</a>.</p>
+              <p><a href="#help" data-toggle="modal" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-question-sign"></span> Nápověda</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="help" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title"><span class="glyphicon glyphicon-question-sign"></span> Nápověda</h4>
+          </div>
+          <div class="modal-body">
+            <h4>Použití</h4>
+            <h5><span class="glyphicon glyphicon-list"></span> Obsah</h5>
+            <p>Volba menu <a href="#toc" data-toggle="modal"><span class="glyphicon glyphicon-list"></span> Obsah</a> zobrazí seznam všech písní a umožní vybrat požadovanou.</p>
+            <h5><span class="glyphicon glyphicon-search"></span> Vyhledávání</h5>
+            <p>Do textového pole v horní části obrazovky zadejte:</p>
+            <ul>
+              <li>číslo písně (1-177),</li>
+              <li>část názvu písně (s diakritikou i bez),</li>
+              <li>část textu písně (s diakritikou).</li>
+            </ul>
+            <p>K vyhledání dojde automaticky (nejdéle po stisknutí tlačítka <span class="glyphicon glyphicon-search"></span>).</p>
+            <p>Při vyhledávání jsou použity regulární výrazy (<a href="#regexp" onclick="document.getElementById('regexp').scrollIntoView(); return false;">viz dále</a>), nezáleží na velikosti písmen a v názvech lze vyhledávat i bez diakritiky.</p>
+            <h5><span class="glyphicon glyphicon-tint"></span> Režim do šera</h5>
+            <p>Volba nastavení <a href="#" class="invertor"><span class="glyphicon glyphicon-tint"></span> Režim do šera</a> přizpůsobí barevné schéma aplikace pro nižší vyzařování displeje ve tmavých podmínkách. K původnímu schématu se vrátíte stejným způsobem.</p>
+            <hr>
+            <h4 id="regexp">Regulární výrazy</h4>
+            <p>Regulární výrazy jsou mocným nástrojem vyhledávání, přinášejí mnoho nových možností, na druhou stranu se jejich existencí až do potřeby použití nemusíte zabývat.</p>
+            <p>Nastane-li vlivem regulárního výrazu chyba, zkuste dotaz pozměnit. Zpravidla postačí <em>ne</em>použít tyto znaky: <code>*</code>, <code>?</code>, <code>+</code>, <code>[</code>, <code>]</code>, <code>(</code>, <code>)</code>, <code>{</code>, <code>}</code>, <code>\</code> – mají speciální význam (pokud i přesto chcete, umístěte před ně výraz <code>\</code>, který speciální účinek ruší).</p>
+            <h5><span class="glyphicon glyphicon-bookmark"></span> Příklady</h5>
+            <dl class="dl-horizontal">
+            <dt><code>žalm ..</code></dt><dd>Žalm 10, Žalm 99, Žalm OK…</dd>
+            <dt><code>ž.*m</code></dt><dd>Řetězce obsahující <code>ž</code>, jiné znaky a <code>m</code></dd>
+            <dt><code>^ž.*1$</code></dt><dd>Řetězce začínající na <code>ž</code> a končící na <code>1</code></dd>
+            </dl>
+            <h5><span class="glyphicon glyphicon-transfer"></span> Alternativy</h5>
+            <dl class="dl-horizontal">
+              <dt><code>[abc]</code></dt><dd>Znak z množiny</dd>
+              <dt><code>[^abc]</code></dt><dd>Znak mimo množinu</dd>
+              <dt><code>[a-Z]</code></dt><dd>Znak z rozsahu</dd>
+              <dt><code>T2|KN|Z2</code></dt><dd>Libovolná alternativa</dd>
+            </dl>
+            <h5><span class="glyphicon glyphicon-asterisk"></span> Metaznaky</h5>
+            <dl class="dl-horizontal">
+              <dt><code>.</code></dt><dd>Libovolný znak (mimo konce řádku)</dd>
+              <dt><code>\\w</code></dt><dd>Znak slova</dd>
+              <dt><code>\\W</code></dt><dd>Znak, který není znakem slova</dd>
+              <dt><code>\\d</code></dt><dd>Číslice</dd>
+              <dt><code>\\D</code></dt><dd>Znak, který není číslicí</dd>
+              <dt><code>\\s</code></dt><dd>Znak 'whitespace' (mezera, tabulátor, zalomení řádku)</dd>
+              <dt><code>\\S</code></dt><dd>Znak, který není 'whitespace'</dd>
+              <dt><code>\\b</code></dt><dd>Znak na začátku/konci slova</dd>
+              <dt><code>\\B</code></dt><dd>Znak, který není na začátku/konci slova</dd>
+            </dl>
+            <h5><span class="glyphicon glyphicon-stats"></span> Kvantifikátory</h5>
+            <dl class="dl-horizontal">
+              <dt><code>?</code></dt><dd>0 až 1 výskyt</dd>
+              <dt><code>*</code></dt><dd>0 až neomezeně výskytů</dd>
+              <dt><code>+</code></dt><dd>1 až neomezeně výskytů</dd>
+              <dt><code>{X}</code></dt><dd>X výskytů</dd>
+              <dt><code>{X,Y}</code></dt><dd>X až Y výskytů</dd>
+              <dt><code>{X,}</code></dt><dd>X až neomezeně výskytů</dd>
+              <dt><code>^</code></dt><dd>Začátek řetězce</dd>
+              <dt><code>$</code></dt><dd>Konec řetězce</dd>
+            </dl>
+            <p>Vyhledávání <strong>nerozlišuje velikost písma</strong>.</p>
+            <p><a href="http://www.regularnivyrazy.info/serial-javascript-regexp.html" target="_blank">Podrobnější návod <span class="glyphicon glyphicon-globe"></span></a></p>
+            <hr>
+            <h4>O aplikaci</h4>
+            <dl class="dl-horizontal">
+              <dt>Autor</dt><dd>© Jan Molnár, 2013</dd>
+              <dt>Licence</dt><dd><a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU GPL v3.0 <span class="glyphicon glyphicon-globe"></span></a></dd>
+              <dt>Projekt</dt><dd><a href="http://otevrenavira.farnostnm.cz/" target="_blank">OtevřenáVíra <span class="glyphicon glyphicon-globe"></span></a></dd>
+              <dt>Verze</dt><dd>13-10-17, <a href="https://github.com/zomp/book/www/" target="_blank">aktuální <span class="glyphicon glyphicon-globe"></span></a></dd>
+            </dl>
+            <h5><span class="glyphicon glyphicon-user"></span> Autor</h5>
+            <dl class="dl-horizontal">
+              <dt><a href="http://cz.linkedin.com/in/janmolnar/" target="_blank">Jan Molnár <span class="glyphicon glyphicon-globe"></span></a></dt><dd><a href="mailto:jan.molnar@gmail.com" target="_blank">jan.molnar@gmail.com <span class="glyphicon glyphicon-envelope"></span></a></dd>
+            </dl>
+            <h5><span class="glyphicon glyphicon-comment"></span> Obsah</h5>
+            <dl class="dl-horizontal">
+              <dt>Autor</dt><dd>Různí autoři</dd>
+              <dt>Licence</dt><dd>Bez svolení autorů</dd>
+            </dl>
+            <h5><span class="glyphicon glyphicon-cog"></span> Technologie</h5>
+            <dl class="dl-horizontal">
+              <dt><a href="http://getbootstrap.com/" target="_blank">Bootstrap <span class="glyphicon glyphicon-globe"></span></a></dt><dd><a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0 <span class="glyphicon glyphicon-globe"></span></a></dd>
+              <dt><a href="http://jquery.com/" target="_blank">jQuery <span class="glyphicon glyphicon-globe"></span></a></dt><dd><a href="http://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt" target="_blank">MIT License <span class="glyphicon glyphicon-globe"></span></a></dd>
+              <dt><a href="http://phonegap.com/" target="_blank">PhoneGap <span class="glyphicon glyphicon-globe"></span></a></dt><dd><a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0 <span class="glyphicon glyphicon-globe"></span></a></dd>
+            </dl>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Zavřít</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="toc" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title"><span class="glyphicon glyphicon-list"></span> Obsah</h4>
+          </div>
+          <div class="modal-body">
+            <h4>Obsah</h4>
+            <div class="list-group toc">
+<!--               <a href="#carousel" data-slide-to="0" data-dismiss="modal" class="list-group-item"><span class="text-primary">Úvodní strana</span></a> -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Zavřít</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="link-top"><a href="#"><span class="glyphicon glyphicon-chevron-up text-muted"></span></a></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="content.js"></script>
+    <script src="js/book.js"></script>
+  </body>
+</html>
