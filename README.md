@@ -8,15 +8,15 @@ Usage
 
 There are three ways to use the book.
 
-## Native-like Application
+#### Native-like Application
 
 Install the application from your device software market. **Attention:** This source is not available yet.
 
-## Of-line HTML Application
+#### Of-line HTML Application
 
 Download the application from the repository and place into your device. Run by your Internet browser.
 
-## On-line HTML Application
+#### On-line HTML Application
 
 The current application version is available on its [GitHub Page](http://zomp.github.io/book/www/).
 
