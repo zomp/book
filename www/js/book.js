@@ -269,7 +269,15 @@ jQuery(function ($) {
   //hide typeahead on item selection
   $('#carousel').on('slide.bs.carousel', function () {
     $('.form-search').parent().removeClass('open');
-  })
+  });
+  
+  //prev/next on swipe
+  $(document.body).hammer().on('swiperight dragright', function () {
+    $('#carousel').carousel('prev');
+  });
+  $(document.body).hammer().on('swipeleft dragleft', function () {
+    $('#carousel').carousel('next');
+  });
   
   //scroll top link on page bottom
   $('.link-top').click(function (event) {
