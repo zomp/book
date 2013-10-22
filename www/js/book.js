@@ -232,12 +232,13 @@ jQuery(function ($) {
   
   //arrow typeahead items looping and escape closing
   $('.form-search, .typeahead-search').keydown(function (event) {
+    event.stopPropagation();
     if (!/(38|40|27)/.test(event.which))
       return;
+    
     var parent = $(this).parent();
     var searchInput = $('.form-search', parent);
     
-    event.stopPropagation();
     event.preventDefault();
     
     if (event.which == 27) { //escape
@@ -272,22 +273,22 @@ jQuery(function ($) {
   });
   
   //prev/next on swipe/drag/keys
-  $(document.body).hammer().on('swiperight dragright', function () {
+  $(document.body).hammer().on('swiperight', function () { //swiperight dragright
     $('#carousel').carousel('prev');
   });
-  $(document.body).hammer().on('swipeleft dragleft', function () {
+  $(document.body).hammer().on('swipeleft', function () { //swipeleft dragleft
     $('#carousel').carousel('next');
   });
   $(document.body).keydown(function (event) {
-    if (!/(33|34|37|39)/.test(event.which))
-      return;
     switch (event.which) {
       case 33: //pgUp
       case 37: //left
         $('#carousel').carousel('prev');
+        break;
       case 34: //pgDn
       case 39: //right
         $('#carousel').carousel('next');
+        break;
     }
   });
   
