@@ -24,7 +24,7 @@ jQuery(function ($) {
     toc.append('<a href="#carousel" data-slide-to="' + (i+CONTENT_OFFSET) + '" data-dismiss="modal" class="list-group-item"><span class="text-primary">' + content[i].number + '</span> ' + content[i].name + '</a>');
   }
   for (var i = 0; i < content.length; i++) {
-    inner.append('<div id="' + encodeURIComponent(content[i].number) + '" class="item"><h2><span class="text-primary">' + content[i].number + '</span> ' + content[i].name + '</h2>' + content[i].content + '<p class="text-muted">' + content[i].author + '</p></div>');
+    inner.append('<div id="' + encodeURIComponent(content[i].number) + '" class="item"><div class="container"><h2><span class="text-primary">' + content[i].number + '</span> ' + content[i].name + '</h2>' + content[i].content + '<p class="text-muted">' + content[i].author + '</p></div></div>');
   }
   
   //invert colors
