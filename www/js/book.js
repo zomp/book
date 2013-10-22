@@ -271,12 +271,24 @@ jQuery(function ($) {
     $('.form-search').parent().removeClass('open');
   });
   
-  //prev/next on swipe
+  //prev/next on swipe/drag/keys
   $(document.body).hammer().on('swiperight dragright', function () {
     $('#carousel').carousel('prev');
   });
   $(document.body).hammer().on('swipeleft dragleft', function () {
     $('#carousel').carousel('next');
+  });
+  $(document.body).keydown(function (event) {
+    if (!/(33|34|37|39)/.test(event.which))
+      return;
+    switch (event.which) {
+      case 33: //pgUp
+      case 37: //left
+        $('#carousel').carousel('prev');
+      case 34: //pgDn
+      case 39: //right
+        $('#carousel').carousel('next');
+    }
   });
   
   //scroll top link on page bottom
@@ -285,4 +297,7 @@ jQuery(function ($) {
     event.stopPropagation();
     $('html, body').animate({ scrollTop: 0 }, 'fast');
   });
+  
+  //focus on search input
+  $('.form-search').focus();
 });
