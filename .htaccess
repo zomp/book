@@ -1,0 +1,2 @@
+#set the right header for .manifest files
+AddType text/cache-manifest .manifest

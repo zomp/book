@@ -1,0 +1,27 @@
+CACHE MANIFEST
+
+CACHE:
+# NETWORK: #toggle to refresh cache
+./index.html
+./js/bootstrap.min.js
+./js/jquery.min.js
+./js/jquery.hammer.min.js
+./js/book.js
+./js/html5shiv.js
+./js/respond.min.js
+./content.js
+./favicon.ico
+./ico/apple-touch-icon-144x144-precomposed.png
+./ico/apple-touch-icon-114x114-precomposed.png
+./ico/apple-touch-icon-72x72-precomposed.png
+./ico/apple-touch-icon-57x57-precomposed.png
+./ico/favicon.png
+./css/bootstrap.min.css
+./css/book.css
+./fonts/glyphicons-halflings-regular.woff
+./fonts/glyphicons-halflings-regular.svg
+./fonts/glyphicons-halflings-regular.eot
+./fonts/glyphicons-halflings-regular.ttf
+
+NETWORK:
+*
