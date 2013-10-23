@@ -24,7 +24,7 @@ jQuery(function ($) {
     toc.append('<a href="#carousel" data-slide-to="' + (i+CONTENT_OFFSET) + '" data-dismiss="modal" class="list-group-item"><span class="text-primary">' + content[i].number + '</span> ' + content[i].name + '</a>');
   }
   for (var i = 0; i < content.length; i++) {
-    inner.append('<div id="' + encodeURIComponent(content[i].number) + '" class="item"><div class="container"><h2><span class="text-primary">' + content[i].number + '</span> ' + content[i].name + '</h2>' + content[i].content + '<p class="text-muted">' + content[i].author + '</p></div></div>');
+    inner.append('<div id="' + encodeURIComponent(content[i].number) + '" class="item"><div class="container"><h2><span class="text-primary">' + content[i].number + '</span> ' + content[i].name + '</h2>' + content[i].content + '<p class="text-muted"><span class="glyphicon glyphicon-user"></span> ' + content[i].author + '</p></div></div>');
   }
   
   //invert colors
@@ -281,13 +281,24 @@ jQuery(function ($) {
   });
   $(document.body).keydown(function (event) {
     switch (event.which) {
-      case 33: //pgUp
       case 37: //left
         $('#carousel').carousel('prev');
         break;
-      case 34: //pgDn
       case 39: //right
         $('#carousel').carousel('next');
+        break;
+    }
+  });
+  $(document.body).keyup(function (event) {
+    switch (event.which) {
+      case 33: //pgUp
+        $('#carousel').carousel('prev');
+        break;
+      case 34: //pgDn
+        $('#carousel').carousel('next');
+        break;
+      case 17: //ctrl
+        $('.form-search').focus();
         break;
     }
   });
