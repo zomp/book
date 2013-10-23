@@ -11,10 +11,15 @@ CACHE:
 ./js/respond.min.js
 ./content.js
 ./favicon.ico
+./favicon.png
 ./ico/apple-touch-icon-144x144-precomposed.png
 ./ico/apple-touch-icon-114x114-precomposed.png
 ./ico/apple-touch-icon-72x72-precomposed.png
 ./ico/apple-touch-icon-57x57-precomposed.png
+./ico/msapplication-square128x128logo.png
+./ico/msapplication-square270x270logo.png
+./ico/msapplication-square558x270logo.png
+./ico/msapplication-square558x558logo.png
 ./ico/favicon.png
 ./css/bootstrap.min.css
 ./css/book.css
