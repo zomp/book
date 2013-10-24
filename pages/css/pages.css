@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+.navbar-brand img {
+  vertical-align: baseline;
+}
+
+.link-top {
+  position: fixed;
+  bottom: 0;
+  right: 1%;
+  font-size: 24px;
+  opacity: 0.5;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <title>Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplikace, jejímž hlavním cílem je být výborným mobilním zpěvníkem, sekundárním být všestrannou multiplatformní knihou">
+    <meta name="author" content="Jan Molnár">
+    <link rel="shortcut icon" href="pages/favicon.png">
+    <link rel="stylesheet" href="www/css/bootstrap.min.css">
+    <link rel="stylesheet" href="www/css/book.css">
+    <link rel="stylesheet" href="pages/css/pages.css">
+    <!--[if lt IE 9]>
+      <script src="www/js/html5shiv.js"></script>
+      <script src="www/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="navbar" class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="pages/img/brand.png" alt=""> Book</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#o-aplikaci"><span class="glyphicon glyphicon-info-sign"></span> O aplikaci</a></li>
+            <li><a href="#autor"><span class="glyphicon glyphicon-user"></span> Autor</a></li>
+            <li><a href="#technologie"><span class="glyphicon glyphicon-cog"></span> Technologie</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-globe"></span> Odkazy <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://zomp.github.io/book/www/">Zpěvník (ukázka) <span class="glyphicon glyphicon-globe"></span></a></li>
+<!--                 <li class="divider"></li> -->
+                <li><a href="https://github.com/zomp/book/">Zdrojové kódy <span class="glyphicon glyphicon-globe"></span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Book</h1>
+        <p>Aplikace, jejímž hlavním cílem je být výborným mobilním zpěvníkem, sekundárním být všestrannou multiplatformní knihou.</p>
+        <p><a href="http://zomp.github.io/book/www/" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-play"></span> Zpěvník (ukázka)</a></p>
+      </div>
+      <h3 id="o-aplikaci"><span class="glyphicon glyphicon-info-sign"></span> O aplikaci</h3>
+      <dl class="dl-horizontal">
+        <dt>Licence</dt><dd><a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU GPL v3.0 <span class="glyphicon glyphicon-globe"></span></a></dd>
+        <dt>Práva</dt><dd>© Jan Molnár, 2013</dd>
+        <dt>Zdrojové kódy</dt><dd><a href="https://github.com/zomp/book/" target="_blank">https://github.com/zomp/book/ <span class="glyphicon glyphicon-globe"></span></a></dd>
+        <dt>Projekt</dt><dd><a href="http://otevrenavira.farnostnm.cz/" target="_blank">OtevřenáVíra <span class="glyphicon glyphicon-globe"></span></a></dd>
+        <dt>Aktuální ukázka</dt><dd><a href="http://zomp.github.io/book/www/" target="_blank">http://zomp.github.io/book/www/ <span class="glyphicon glyphicon-globe"></span></a></dd>
+      </dl>
+      <hr>
+      <h3 id="autor"><span class="glyphicon glyphicon-user"></span> Autor</h3>
+      <dl class="dl-horizontal">
+        <dt>Jméno</dt><dd>Jan Molnár</dd>
+        <dt>Kontakt</dt><dd><a href="http://cz.linkedin.com/in/janmolnar/" target="_blank">http://cz.linkedin.com/in/janmolnar/ <span class="glyphicon glyphicon-globe"></span></a></dd>
+      </dl>
+      <hr>
+      <h3 id="technologie"><span class="glyphicon glyphicon-cog"></span> Technologie</h3>
+      <dl class="dl-horizontal">
+        <dt>Bootstrap</dt><dd>Odkaz: <a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/ <span class="glyphicon glyphicon-globe"></span></a></dd><dd>Licence: <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0 <span class="glyphicon glyphicon-globe"></span></a></dd>
+        <dt>jQuery</dt><dd>Odkaz: <a href="http://jquery.com/" target="_blank">http://jquery.com/ <span class="glyphicon glyphicon-globe"></span></a></dd><dd>Licence: <a href="http://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt" target="_blank">MIT License <span class="glyphicon glyphicon-globe"></span></a></dd>
+        <dt>PhoneGap</dt><dd>Odkaz: <a href="http://phonegap.com/" target="_blank">http://phonegap.com/ <span class="glyphicon glyphicon-globe"></span></a></dd><dd>Licence: <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0 <span class="glyphicon glyphicon-globe"></span></a></dd>
+      </dl>
+      <hr>
+      <p class="text-muted">© Jan Molnár, 2013</p>
+    </div>
+    <div class="link-top"><a href="#navigation" title="Nahoru" onclick="event.preventDefault();event.stopPropagation();$('html, body').animate({ scrollTop: 0 }, 'fast');"><span class="glyphicon glyphicon-chevron-up text-muted"></span></a></div>
+    <script src="www/js/jquery.min.js"></script>
+    <script src="www/js/bootstrap.min.js"></script>
+  </body>
+</html>
