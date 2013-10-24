@@ -14,11 +14,11 @@ Install the application from your device software market. **Attention:** This so
 
 #### Of-line HTML Application
 
-Download the application from the repository and place into your device. Run by your Internet browser.
+[Download](https://github.com/zomp/book/archive/master.zip) the application from the repository, place into your device and run by your Internet browser. Or simply visit the __[current application demo](http://zomp.github.io/book/www/)__ via your mobile browser and the application should be saved into your device automatically.
 
 #### On-line HTML Application
 
-The current application version is available on its [GitHub Page](http://zomp.github.io/book/www/).
+The __[current application demo](http://zomp.github.io/book/www/)__ is available on its [GitHub Pages](http://zomp.github.io/book/).
 
 Supported Systems
 -----------------
@@ -26,7 +26,7 @@ Supported Systems
 - __Android__
 - __iOS__
 - __Windows Phone__
-- BlackB_erry
+- BlackBerry
 - WebOS
 - Symbian
 - Kindle (partially)
@@ -35,6 +35,6 @@ Supported Systems
 Development
 -----------
 
-You are welcome to join me in improving the application. Feel free to raise [issues](https://github.com/zomp/book/issues), contribute [commits](https://github.com/zomp/book/pulls) or [fork](https://github.com/zomp/book/fork) entire application.
+You are welcome to join me in improving the application. Feel free to raise [issues](https://github.com/zomp/book/issues), contribute [commits](https://github.com/zomp/book/pulls) or [fork](https://github.com/zomp/book/fork) the entire application.
 
-To keep the [on-line application version](http://zomp.github.io/book/www/) up-to-date, set your environment according to the following [instructions](http://brettterpstra.com/2012/09/26/github-tip-easily-sync-your-master-to-github-pages/).
+To keep the [on-line demo](http://zomp.github.io/book/www/) up-to-date, set your environment according to the following [instructions](http://brettterpstra.com/2012/09/26/github-tip-easily-sync-your-master-to-github-pages/).
