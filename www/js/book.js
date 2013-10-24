@@ -12,10 +12,10 @@ jQuery(function ($) {
       $(document.body).css('font-size', window.localStorage.getItem('font-size'));
   }
   
-  //hide menu above initial view
-  var hideMenu = function () {
-    $('html, body').scrollTop($('#container').position().top);
-  };
+//   //hide menu above initial view
+//   var hideMenu = function () {
+//     $('html, body').scrollTop($('#container').position().top);
+//   };
   
   //inicialization
   var inner = $('#carousel .carousel-inner');
