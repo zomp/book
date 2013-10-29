@@ -273,10 +273,10 @@ jQuery(function ($) {
   });
   
   //prev/next on swipe/drag/keys
-  $(document.body).hammer().on('swiperight', function () { //swiperight dragright
+  $(document.body).hammer({stop_browser_behavior: false}).on('swiperight', function () { //swiperight dragright
     $('#carousel').carousel('prev');
   });
-  $(document.body).hammer().on('swipeleft', function () { //swipeleft dragleft
+  $(document.body).hammer({stop_browser_behavior: false}).on('swipeleft', function () { //swipeleft dragleft
     $('#carousel').carousel('next');
   });
   $(document.body).keydown(function (event) {
