@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="io.github.zomp" version="13-10-28">
+  <name>Zpěvník</name>
+  <description>Zpěvník chválových písní pro akce Jump a Havelnice.</description>
+  <author href="http://cz.linkedin.com/in/janmolnar/">Jan Molnár</author>
+  <license href="http://www.gnu.org/licenses/gpl.html">GNU GPL v3.0</license>
+
+  <feature name="http://api.phonegap.com/1.0/device" />
+
+  <preference name="permissions" value="none" />
+<!--   <preference name="phonegap-version" value="3.1.0" /> -->
+  <preference name="orientation" value="default" />
+  <preference name="fullscreen" value="true" />
+  <preference name="webviewbounce" value="true" />
+  <preference name="stay-in-webview" value="false" />
+  <preference name="show-splash-screen-spinner" value="true" />
+  <preference name="auto-hide-splash-screen" value="true" />
+  <preference name="android-installLocation" value="auto" />
+
+  <icon src="icon.png" />
+  <icon gap:platform="android" gap:density="ldpi" src="ico/android-icon-36x36.png" />
+  <icon gap:platform="android" gap:density="mdpi" src="ico/android-icon-48x48.png" />
+  <icon gap:platform="android" gap:density="hdpi" src="ico/apple-touch-icon-72x72-precomposed.png" />
+  <icon gap:platform="android" gap:density="xhdpi" src="ico/android-icon-96x96.png" />
+  <icon gap:platform="blackberry" src="ico/apple-touch-icon-144x144-precomposed.png" />
+  <icon gap:platform="ios" width="57" height="57" src="ico/apple-touch-icon-57x57-precomposed.png" />
+  <icon gap:platform="ios" width="72" height="72" src="ico/apple-touch-icon-72x72-precomposed.png" />
+  <icon gap:platform="ios" width="114" height="114" src="ico/apple-touch-icon-114X114-precomposed.png" />
+  <icon gap:platform="ios" width="144" height="144" src="ico/apple-touch-icon-144x144-precomposed.png" />
+  <icon gap:platform="webos" src="ico/webos-icon-64x64.png" />
+  <icon gap:platform="webos" gap:role="mini" src="ico/webos-icon-32x32.png" />
+  <icon gap:platform="winphone" src="ico/msapplication-square48x48logo.png" />
+  <icon gap:platform="winphone" gap:role="background" src="ico/msapplication-square173x173logo.png" />
+
+  <access origin="http://127.0.0.1*" />
+</widget>
