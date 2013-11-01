@@ -5,10 +5,13 @@
   <author href="http://cz.linkedin.com/in/janmolnar/">Jan Molnár</author>
   <license href="http://www.gnu.org/licenses/gpl.html">GNU GPL v3.0</license>
 
+  <content src="www/index.html" />
+  <access origin="http://127.0.0.1*" />
+
   <feature name="http://api.phonegap.com/1.0/device" />
 
   <preference name="permissions" value="none" />
-<!--   <preference name="phonegap-version" value="3.1.0" /> -->
+  <!--<preference name="phonegap-version" value="3.1.0" />-->
   <preference name="orientation" value="default" />
   <preference name="fullscreen" value="true" />
   <preference name="webviewbounce" value="true" />
@@ -31,6 +34,4 @@
   <icon gap:platform="webos" gap:role="mini" src="ico/webos-icon-32x32.png" />
   <icon gap:platform="winphone" src="ico/msapplication-square48x48logo.png" />
   <icon gap:platform="winphone" gap:role="background" src="ico/msapplication-square173x173logo.png" />
-
-  <access origin="http://127.0.0.1*" />
 </widget>
