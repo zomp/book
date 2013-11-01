@@ -20,18 +20,18 @@
   <preference name="auto-hide-splash-screen" value="true" />
   <preference name="android-installLocation" value="auto" />
 
-  <icon src="icon.png" />
-  <icon gap:platform="android" gap:density="ldpi" src="ico/android-icon-36x36.png" />
-  <icon gap:platform="android" gap:density="mdpi" src="ico/android-icon-48x48.png" />
-  <icon gap:platform="android" gap:density="hdpi" src="ico/apple-touch-icon-72x72-precomposed.png" />
-  <icon gap:platform="android" gap:density="xhdpi" src="ico/android-icon-96x96.png" />
-  <icon gap:platform="blackberry" src="ico/apple-touch-icon-144x144-precomposed.png" />
-  <icon gap:platform="ios" width="57" height="57" src="ico/apple-touch-icon-57x57-precomposed.png" />
-  <icon gap:platform="ios" width="72" height="72" src="ico/apple-touch-icon-72x72-precomposed.png" />
-  <icon gap:platform="ios" width="114" height="114" src="ico/apple-touch-icon-114X114-precomposed.png" />
-  <icon gap:platform="ios" width="144" height="144" src="ico/apple-touch-icon-144x144-precomposed.png" />
-  <icon gap:platform="webos" src="ico/webos-icon-64x64.png" />
-  <icon gap:platform="webos" gap:role="mini" src="ico/webos-icon-32x32.png" />
-  <icon gap:platform="winphone" src="ico/msapplication-square48x48logo.png" />
-  <icon gap:platform="winphone" gap:role="background" src="ico/msapplication-square173x173logo.png" />
+  <icon src="www/icon.png" />
+  <icon gap:platform="android" gap:density="ldpi" src="www/ico/android-icon-36x36.png" />
+  <icon gap:platform="android" gap:density="mdpi" src="www/ico/android-icon-48x48.png" />
+  <icon gap:platform="android" gap:density="hdpi" src="www/ico/apple-touch-icon-72x72-precomposed.png" />
+  <icon gap:platform="android" gap:density="xhdpi" src="www/ico/android-icon-96x96.png" />
+  <icon gap:platform="blackberry" src="www/ico/apple-touch-icon-144x144-precomposed.png" />
+  <icon gap:platform="ios" width="57" height="57" src="www/ico/apple-touch-icon-57x57-precomposed.png" />
+  <icon gap:platform="ios" width="72" height="72" src="www/ico/apple-touch-icon-72x72-precomposed.png" />
+  <icon gap:platform="ios" width="114" height="114" src="www/ico/apple-touch-icon-114X114-precomposed.png" />
+  <icon gap:platform="ios" width="144" height="144" src="www/ico/apple-touch-icon-144x144-precomposed.png" />
+  <icon gap:platform="webos" src="www/ico/webos-icon-64x64.png" />
+  <icon gap:platform="webos" gap:role="mini" src="www/ico/webos-icon-32x32.png" />
+  <icon gap:platform="winphone" src="www/ico/msapplication-square48x48logo.png" />
+  <icon gap:platform="winphone" gap:role="background" src="www/ico/msapplication-square173x173logo.png" />
 </widget>
