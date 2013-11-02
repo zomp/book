@@ -10,7 +10,7 @@ There are three ways to use the book.
 
 #### Native-like Application
 
-Install the application from your device software market. **Attention:** This source is not available yet.
+Install the application from your device software market. Or __[download an installer](https://build.phonegap.com/apps/627088/share)__.
 
 #### Of-line HTML Application
 
