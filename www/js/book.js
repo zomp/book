@@ -35,6 +35,8 @@ jQuery(function ($) {
   });
   
   //fullscreen
+  if (!(document.documentElement.requestFullscreen || document.documentElement.mozRequestFullScreen || document.documentElement.webkitRequestFullscreen ||document.documentElement.oRequestFullScreen || document.documentElement.msRequestFullScreen))
+    $('.nofs-hide').hide();
   $('.fullscreen').click(function (event) {
     if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.oFullscreenElement && !document.msFullscreenElement) {
       if (document.documentElement.requestFullscreen)
@@ -273,10 +275,10 @@ jQuery(function ($) {
   });
   
   //prev/next on swipe/drag/keys
-  $(document.body).hammer({stop_browser_behavior: false}).on('swiperight', function () { //swiperight dragright
+  $(document.body).hammer({stop_browser_behavior: false, swipe_velocity: 0.1}).on('swiperight', function () { //swiperight dragright
     $('#carousel').carousel('prev');
   });
-  $(document.body).hammer({stop_browser_behavior: false}).on('swipeleft', function () { //swipeleft dragleft
+  $(document.body).hammer({stop_browser_behavior: false, swipe_velocity: 0.1}).on('swipeleft', function () { //swipeleft dragleft
     $('#carousel').carousel('next');
   });
   $(document.body).keydown(function (event) {
@@ -309,7 +311,21 @@ jQuery(function ($) {
     event.stopPropagation();
     $('html, body').animate({ scrollTop: 0 }, 'fast');
   });
+  $(window).scroll(function () {
+    if ($(this).scrollTop())
+        $('.link-top:hidden').stop(true, true).fadeIn();
+    else
+        $('.link-top').stop(true, true).fadeOut();
+  });
   
+  //android buttons
+  $(document).on('menubutton', function () {
+    $('.menu .navbar-collapse').collapse('toggle');
+  });
+  $(document).on('searchbutton', function () {
+    $('.form-search').focus();
+  });
+
   //focus on search input
   $('.form-search').focus();
 });

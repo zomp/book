@@ -27,8 +27,9 @@ body {
   position: fixed;
   bottom: 0;
   right: 1%;
-  font-size: 24px;
-  opacity: 0.5;
+  font-size: 30px;
+  opacity: 0.25;
+  display: none;
 }
 
 .navbar {
